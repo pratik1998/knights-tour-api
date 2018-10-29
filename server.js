@@ -39,6 +39,7 @@ app.post('/', (req, res) => {
             console.log('Access control JSON file has been saved.');
           });
           let out = trace.split("\n");
+          console.log(out);
           res.status(200).json({
             ans: out
           });
